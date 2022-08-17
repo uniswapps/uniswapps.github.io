@@ -1,0 +1,168 @@
+{
+  "settings": {
+    "name": "uniswapps",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise5",
+      "title": "Mobirise 5",
+      "styling": {
+        "primaryColor": "#6592e6",
+        "secondaryColor": "#ff6666",
+        "successColor": "#40b0bf",
+        "infoColor": "#47b5ed",
+        "warningColor": "#FFE161",
+        "dangerColor": "#ff9966",
+        "mainFont": "Jost",
+        "display1Font": "Jost",
+        "display1Size": 4.6,
+        "display2Font": "Jost",
+        "display2Size": 3,
+        "display5Font": "Jost",
+        "display5Size": 2,
+        "display7Font": "Jost",
+        "display7Size": 1.2,
+        "display4Font": "Jost",
+        "display4Size": 1.1,
+        "isRoundedButtons": false,
+        "isGhostButtonBorder": false,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#5c8799",
+        "#191b1f"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.6.11",
+    "siteFonts": [
+      {
+        "css": "'Jost', sans-serif",
+        "name": "Jost",
+        "url": "https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "favicon": "@PROJECT_PATH@/assets/images/uniswap-logo.png",
+    "mbrsiteDomain": "pmqboylvdq",
+    "imageResize": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.6.11",
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Uniswap | Uniswap Exchange | Homė.",
+        "meta_descr": "Swap, earn, and build on the leading decentralized crypto trading protocol. Uniswap (UNI) is the native token of the Uniswap decentralized exchange, a liquidity provider for the trading of tokens on the wider Ethereum network.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".image-wrapper": {
+                "margin-bottom": "1rem"
+              }
+            },
+            ".row": {
+              "flex-direction": "row-reverse"
+            },
+            "img": {
+              "width": "100%"
+            }
+          },
+          "_name": "image3",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image3\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"12\" step=\"1\" value=\"12\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#191b1f\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/uniswap-org.png\" alt=\"Uniswap\">\n                    <p class=\"mbr-description mbr-fonts-style mt-2 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-description\">\n                        Image Description</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tezKlBJCDt",
+          "_anchor": "image3-0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "header2",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header2\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n\n        <input type=\"range\" inline name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"12\" step=\"1\">\n        <select title=\"Align\" name=\"contentAlign\">\n            <option value selected>Left</option>\n            <option value=\"justify-content-center\">Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background7.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#191b1f\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row {{contentAlign}}\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <h1 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>Uniswap Exchange</b></h1>\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\" mbr-if=\"showSubitle\">Header Subtitle</h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">A detailed guide to understanding and using Uniswap Exchange\n<br>\n<br>Cryptocurrencies or digitally created currencies have been quickly taking over the world in this highly technical era. And there are exchange platforms, as well as crypto wallets to cater to your needs when it comes to trading and investing in cryptocurrencies. Many features have been designed and encrypted in the exchange platforms, one of which is swapping the tokens. Let’s say, for instance, you have Crypto A and there are ten other available crypto variants, with the “Swap” feature you can choose to swap your crypto fund to any of the available variants. Here, in this read, we’ll be talking about Uniswap Exchange, which is exclusively named for one of its core services- swapping Ethereum-based tokens. Reading on, you’ll get a brief introduction of what the exchange is all about (including its foundation), its features, the way it functions, and the elaborate procedure for completing a crypto swap on the platform. Learn every significant detail you need to know for using Uniswap Exchange for making swap transactions of all your Ethereum-based crypto tokens.\n<br>Let’s get to know Uniswap better\n<br>\n<br>This section of the read has been specifically created to help you understand and familiarize yourself with the exchange platform- Uniswap exchange has certainly been recognized as a smart contract-based crypto exchange service that allows individuals to swap their Ethereum-based tokens. When you talk about traditional exchanges, it requires users to deposit funds first, and then match the orders, Uniswap however, does not appeal for custody of a trader’s funds. That is because it manages all the swaps via a smart contract system that is known to run on the Ethereum blockchain network.\n<br>\n<br>Another important thing we would like to share is the four foundations on which the exchange is built therefore, they are listed below:\n<br>\n<br>    A basic user-friendly ERC-20 tokens swapping interface designed with the smart contract system.\n<br>\n<br>    A well-formalized and working model for users to pool all of their liquidity services.\n<br>\n<br>    Traders and other liquidity providers get benefitted from an open-source frontend interface.\n<br>\n<br>    The exchange doesn’t just help with swapping, it also commits to a platform that is free and decentralized for asset exchange.\n<br>\n<br>Major traits that make Uniswap worth trying\n<br>\n<br>This part of the read has been assigned the responsibility to help you understand the key features of the Uniswap exchange platform and they have been listed below:\n<br>\n<br>    All-day trading with automation- There is an automatic smart contract system that helps in executing each of the trades and you can make trading transactions throughout the day (and night).\n<br>\n<br>    Trade in Ethereum- This platform is exclusive to making transactions only for ERC-20 tokens on the Ethereum network.\n<br>\n<br>    Portrays decentralization- Uniswap Exchange has been created to portray the features and services of a decentralized exchange platform, wherein tokens can be traded without any intervention or interference of a centralized third party. However, it only portrays decentralization but is different from it as there is no P2P exchange in the real-time. It is only for swapping Ethereum-based tokens with a liquidity pool.\n<br>\n<br>    No restrictions on Order Size- The order size for Uniswap is given from zero to infinity and the used system employs a curve that results in price increase as and when there is an increase in the desired quantity. Therefore, it is certain that there is no restriction on the size of the order but larger orders might be more expensive after a certain point.\n<br>\n<br>    Ethereum Foundation Grant- The developer of the platform is recognized for receiving the Ethereum Foundation grant for developing Uniswap.\n<br>\n<br>    Low trading fee- Transactions would be charged as low as 0.3% trading fee that can be directly invested into the liquidity providers. That’s right, the charged fees do not go to the founders or any other centralized platform but are used to keep the system working and to offer incentives to the liquidity providers to make markets.\n<br>\n<br>    More than 80 variants- Uniswap has managed to house more than 80 crypto tokens that have been designed to be Ethereum-based.\n<br>\n<br>    Provide liquidity and earn- A cut of the trading fees, as mentioned above, goes to the liquidity providers. And you can earn it by depositing any of the Ethereum-based tokens that the platform is compatible with.\n<br>\n<br>    Supported Wthereum wallets- Uniswap Exchange lets you swap tons of Ether-based tokens and to make it even more facile, we suggest users link it to any of their Ethereum wallets. It makes the swap quicker and more efficient.\n<br>\n<br>Learn about the functionality of Uniswap\n<br>\n<br>As you recall, Uniswap exchange is entirely based on an automated token exchange system that runs on the Ethereum blockchain network. There is no peer-to-peer transaction in real-time but can help in swapping your ERC-20 protocol tokens without any third-party intervention. As long as Uniswap offers and/or provides liquidity, almost any Ethereum-based token can be listed on the platform for swapping purposes. When working with Uniswap, traders need to begin with selecting two of the available tokens that they wish to trade in. Then, there is a thorough review of three specific things- price slippage, proposed swap rate, and the fee paid. And lastly, traders need to confirm their swap transaction that settles the trade right away into an Ethereum Wallet.\n<br>Steps for the swap- Uniswap Exchange\n<br>\n<br>This part of the read has been prepared to help you with the steps involved in swapping Ethereum-based tokens on Uniswap:\n<br>\n<br>    Begin with entering the official Uniswap Exchange site online.\n<br>\n<br>    Choose the type of Ethereum-based token you want to send out.\n<br>\n<br>    Choose the type of ERC-20 token that you want to get back.\n<br>\n<br>    Type in the amount you wish to swap for the tokens.\n<br>\n<br>    Compare and review the swap rate, the price slippage, and the like.\n<br>\n<br>    Hit the “Connect to Wallet” option and add your Ethereum Wallet.\n<br>\n<br>    Confirm your input data for the transaction and conclude the swap.\n<br>\n<br>Conclusion\n<br>\n<br>The detailed read above has been carefully crafted to help you understand the Uniswap exchange platform. Going through the read above, you’ll get to know and familiarize yourself with a brief introduction to the platform along with the four principles it is based on. In addition to that, you’ll get to know the exclusive features that make Uniswap so special, followed by a small section for how it functions and the explicit procedure for making a swap transaction on the platform.\n<br>**Disclaimer** : This website entails comprehensive details about using Uniswap exchange so that users can get the necessary training of using it for the first time. However, the information furnished here may not always be correct. Therefore, use the mentioned information at your own risk. By mentioning the details about Uniswap, we do not mean to endorse their services in any manner. Also, we disclaim the usage of their brand name, logos, and images here on this website.</p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\">\n                    <a class=\"btn btn-success\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Free Download!</a>\n                    <a class=\"btn btn-success-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Live Demos &gt;</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tezKmgZbAG",
+          "_anchor": "header2-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
